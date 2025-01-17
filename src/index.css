@@ -1,0 +1,665 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+	/* width: 10px; */
+	display: none;
+}
+
+.css-1ytufz-MuiAvatarGroup-root .MuiAvatar-root {
+	width: 26px;
+	height: 26px;
+	font-size: small;
+}
+
+.cta_img {
+	background-image: url("./assets/BanhartAll.jpg");
+	background-size: cover;
+	background-position: 0% 20%;
+	background-repeat: no-repeat;
+}
+
+.gap_important {
+	column-gap: 2rem !important;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 15px;
+	gap: 15px;
+	background-color: #ffc900;
+	outline: 3px #ffc900 solid;
+	outline-offset: -3px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: 400ms;
+}
+
+.button .text {
+	color: white;
+	font-weight: 700;
+	font-size: 1em;
+	transition: 400ms;
+}
+
+.button svg path {
+	transition: 400ms;
+}
+
+.button:hover {
+	background-color: transparent;
+	color: #334155;
+}
+
+.button:hover .text {
+	color: #00b7ff;
+}
+
+.button:hover svg path {
+	fill: #00b7ff;
+}
+
+/* ? Partner card styles */
+
+.card_3 {
+	background-color: rgb(20, 19, 5);
+	background-image: radial-gradient(
+		at 72% 18%,
+		rgb(4, 15, 21) 0,
+		transparent 86%
+	);
+}
+
+.card_4 {
+    background-image: url('../public/images/mesh-gradient.png');
+    background-position: center 30%;
+    background-size: cover;
+}
+
+.card_5 {
+	background-image: url('../public/images/sawblack.jpg');
+	background-size: cover;
+}
+
+.card_6 {
+	background-image: url('../public/images/smile.jpg');
+	background-size: cover;
+}
+
+/*? Primary button */
+
+.btn {
+	line-height: 1;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.75rem;
+	background-color: #00b7ff;
+	color: #fff;
+	border-radius: 10rem;
+	font-weight: 600;
+	padding: 0.75rem 1.5rem;
+	padding-left: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: background-color 0.3s;
+}
+
+.btn__icon-wrapper {
+	flex-shrink: 0;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	color: #00b7ff;
+	background-color: #fff;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+
+.btn:hover {
+	background-color: #334155;
+}
+
+.btn:hover .btn__icon-wrapper {
+	color: #334155;
+}
+
+.btn__icon-svg--copy {
+	position: absolute;
+	transform: translate(-150%, 150%);
+}
+
+.btn:hover .btn__icon-svg:first-child {
+	transition: transform 0.3s ease-in-out;
+	transform: translate(150%, -150%);
+}
+
+.btn:hover .btn__icon-svg--copy {
+	transition: transform 0.3s ease-in-out 0.1s;
+	transform: translate(0);
+}
+
+.card {
+	position: relative;
+	width: 300px;
+	height: 200px;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	perspective: 1000px;
+	box-shadow: 0 0 0 5px #5dd9f88e;
+	transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card_img {
+	background-size: center;
+	background-position: 0%;
+	/* width: 100%; */
+	/* fill: #333; */
+	transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #81d3ec;
+	transform: rotateX(-90deg);
+	transform-origin: bottom;
+	transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+	transform: rotateX(0deg);
+}
+
+.card__title {
+	margin: 0;
+	font-size: 24px;
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.card_img:hover {
+	scale: 0;
+}
+
+.card__description {
+	margin: 10px 0 0;
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 1.4;
+}
+
+.z_ndex {
+	z-index: 1111;
+}
+
+.throw_img {
+	background-image: url("https://i.pinimg.com/564x/67/8f/ea/678feae8e8917573a9b1d844a50eec4f.jpg");
+	background-size: cover;
+}
+
+@media screen and (max-width: 890px) {
+	.blog_write {
+		display: flex;
+		flex-direction: column;
+		/* height: none; */
+	}
+}
+
+/*! Styles for the blog  */
+
+/** Styles for the connect with us  */
+.overlay {
+    transform: translateY(1em);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.overlay:hover {
+    transform: translateY(0em);
+    opacity: 1;
+}
+
+
+@layer connectWithUs {
+	.connect {
+		@apply min-w-full 
+                min-h-screen;
+	}
+
+	/* .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+} */
+
+	@media screen and (max-width: 986px) {
+		.connect-sec {
+			@apply m-3 rounded-md;
+		}
+	}
+
+	/* ? Grid */
+
+	.showcase {
+		height: auto;
+		padding-inline-start: 10%;
+		padding-inline-end: 15%;
+		padding-block: 2%;
+		overflow: hidden;
+	}
+
+	.portfolio {
+		display: grid;
+		height: auto;
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-columns: repeat(5, 1fr);
+		gap: 32px;
+	}
+
+	.portfolio_item {
+		background: rgb(0, 179, 255);
+		color: black;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 5.5em;
+		width: 100%;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	.portfolio_item.one {
+		color: white;
+		grid-row: span 3;
+		grid-column: span 2;
+		min-height: 100%;
+	}
+
+	.one {
+		background-image: url("./assets/Banhart.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0px;
+		transition: box-shadow 0.2s ease-in-out;
+		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #79d2f5;
+		transform: skewX(175deg);
+	}
+
+	.one:hover {
+		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #79d2f5;
+		transform: skewX(0deg);
+	}
+
+	.portfolio_item.two {
+		grid-row: span 2;
+		grid-column: span 3;
+	}
+
+	.two {
+		background-color: transparent;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		word-spacing: 10px;
+		color: #133353;
+		transition: box-shadow 0.2s ease-in-out;
+	}
+
+	.span_create {
+		color: #79d2f5;
+		font-style: oblique;
+	}
+
+	.portfolio_item.three {
+		grid-row: span 2;
+		grid-column: span 2;
+	}
+
+	.three {
+		background-image: url("https://images.unsplash.com/photo-1494597564530-871f2b93ac55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fGFkdWx0JTIwaGVhbHRoJTIwY2FyZXxlbnwwfHwwfHx8MA%3D%3D");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0px;
+		color: #fff;
+		transition: box-shadow 0.2s ease-in-out;
+	}
+
+	.three:hover {
+		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #79d2f5;
+		transform: skewX(175deg);
+	}
+
+	.portfolio_item.four {
+		grid-row: span 3;
+		grid-column: span 2;
+		min-height: 100%;
+	}
+
+	.four {
+		background-image: url("https://images.unsplash.com/photo-1558338043-b57cd2cbf6ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fGFkdWx0JTIwaGVhbHRoJTIwY2FyZXxlbnwwfHwwfHx8MA%3D%3D");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0px;
+		color: #fff;
+		transition: box-shadow 0.2s ease-in-out;
+	}
+
+	.four:hover {
+		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #79d2f5;
+		transform: skewX(175deg);
+	}
+
+	.portfolio_item.five {
+		grid-row: span 2;
+		grid-column: span 2;
+		min-height: 100%;
+	}
+
+	.five {
+		background-image: url("https://plus.unsplash.com/premium_photo-1667516508065-6d49bc331259?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG9zcGl0YWwlMjBlbnZpcm9ubWVudHxlbnwwfHwwfHx8MA%3D%3D");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0px;
+		color: #fff;
+		transition: box-shadow 0.2s ease-in-out;
+	}
+
+	.five:hover {
+		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #79d2f5;
+		transform: skewX(175deg);
+	}
+
+	.portfolio_item.six {
+		grid-row: span 3;
+		grid-column: span 2;
+		min-height: 20em;
+	}
+
+	.six {
+		background-image: url("https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ0fHx0cmVhdG1lbnR8ZW58MHx8MHx8fDA%3D");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0px;
+		color: #fff;
+		transition: box-shadow 0.2s ease-in-out;
+	}
+
+	.six:hover {
+		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #79d2f5;
+		transform: skewX(175deg);
+	}
+
+	.portfolio_item.seven {
+		grid-row: span 2;
+		grid-column: span 3;
+		background: #79d2f5;
+		min-height: 15em;
+	}
+
+	.seven_button {
+		padding: 1em;
+		font-size: larger;
+		font-weight: 600;
+		width: 9em;
+		background: transparent;
+		border: 1px solid black;
+		border-radius: 9px;
+		cursor: pointer;
+		transition: background-color, color, border, 0.25s ease-in-out;
+	}
+
+	.seven_button:hover {
+		background-color: #79d2f5;
+		color: #fff;
+	}
+
+	.portfolio_item .eight {
+		grid-row: span 2;
+		grid-column: span 2;
+	}
+
+	.services_wrapper_one_fig_img {
+		width: 45%;
+		border-radius: 7px;
+		box-shadow: -12px 12px 0px 0px #79d2f5;
+	}
+
+	.services_wrapper_two_base {
+		@apply flex flex-col;
+	}
+}
+@media (max-width: 1060px) {
+	.showcase {
+		height: auto;
+		padding-inline-start: 20%;
+		padding-inline-end: 20%;
+		padding-block: 8%;
+		overflow: hidden;
+	}
+
+	.item_two_order {
+		@apply order-first;
+	}
+
+	.portfolio_item_two_text {
+		font-size: xxx-large;
+		word-spacing: 14px;
+		line-height: 50px;
+	}
+
+	.services_wrapper_one_fig_img {
+		width: 18rem;
+	}
+
+	.portfolio {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.portfolio_item {
+		color: #fff;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 20.5em;
+		width: 100%;
+		border-radius: 5px;
+	}
+
+	.portfolio_item.two {
+		min-height: 5em;
+	}
+
+	/* 
+            .portfolio_item.one {
+                min-height: 100%;
+            } */
+}
+
+@media (max-width: 987px) {
+	.write-up-media-con {
+		padding: 10px;
+	}
+	.write-up-media-query {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 6rem;
+		height: auto;
+	}
+
+	.services_wrapper_one_fig_img {
+		width: 18rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.services_wrapper_one_fig_img {
+		width: 16rem;
+	}
+}
+
+@media (max-width: 597px) {
+	.services_wrapper_one_fig_img {
+		width: 15rem;
+	}
+}
+
+/*TODO  Styles for the footer */
+
+@layer footerOne {
+	.footer {
+		@apply min-w-full bg-sky-400;
+	}
+
+	.li > span {
+		@apply hover:text-black 
+                hover:underline
+                transition-all;
+	}
+
+	@media screen and (max-width: 620px) {
+		.footer-section {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	@media screen and (max-width: 890px) {
+		.blog_write {
+			display: flex;
+			flex-direction: column;
+			/* height: none; */
+		}
+	}
+}
+/* ! Marquee Styles */
+
+/**
+	* Core, likely what you want to copy/paste with little change
+	*/
+
+.marquee {
+	overflow: hidden;
+	display: block;
+}
+
+.marquee::before {
+	display: block;
+	white-space: pre;
+	/* Abusing `content` property and `attr` function to duplicate content in CSS */
+	content: attr(data-text) "        " attr(data-text) "        "
+		attr(data-text) "        " attr(data-text) "        " attr(data-text)
+		"        " attr(data-text) "        " attr(data-text) "        "
+		attr(data-text) "        " attr(data-text) "        " attr(data-text)
+		"        " attr(data-text) "        " attr(data-text) "        "
+		attr(data-text) "        " attr(data-text) "        " attr(data-text)
+		"        " attr(data-text) "        " attr(data-text) "        "
+		attr(data-text) "        " attr(data-text) "        " attr(data-text);
+	width: fit-content;
+	transform: translate3d(-2%, 0, 0);
+	will-change: transform;
+}
+
+/**
+		* Only run animations when reduced motion is not set
+		* Thanks @patrick_h_lauke@mastodon.social for the heads up!
+		*/
+@media (prefers-reduced-motion: no-preference) {
+	.marquee::before {
+		animation: marquee 6s linear infinite;
+	}
+
+	.marquee--reverse::before {
+		animation-direction: reverse;
+	}
+}
+
+@keyframes marquee {
+	0% {
+		/**
+			* -2% is used to start scrolling with an offset (visual only)
+			*/
+		transform: translate3d(-2%, 0, 0);
+	}
+
+	100% {
+		/**
+				* -2% offset has to be preserved
+				*
+				* Content is duplicated 20 times
+				* 100% / 20 = 5 % = "1 content length"
+				* 
+				* -1px seems to prevent a small jump between each loop
+				*/
+		transform: translate3d(calc(-2% - 5% - 1px), 0, 0);
+	}
+}
+
+/**
+* From here, style marquee however you'd like
+*/
+.marquee {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	font-size: clamp(1rem, 4vh, 1.4rem);
+	flex: 1;
+}
+
+.marquee--navy {
+	background: #54669c;
+}
+
+.marquee--beet {
+	background: #a54a5e;
+}
+
+.marquee--flamingo {
+	background: #11dde8;
+}
+
+.marquee--ochre {
+	background: #022af2;
+}
+
+.marquee--butter {
+	background: #05daff;
+}
+
+.marquee--mantis {
+	background: #759f53;
+}
