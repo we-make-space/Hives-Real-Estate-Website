@@ -5,7 +5,7 @@ import ImageData from "./imageData";
 const Gallery = () => {
 	return (
 		<section className="bg-mesh rounded-md p-8 py-2">
-			<h3 className="p-8 text-4xl font-medium text-sky-400">
+			<h3 className="p-8 text-4xl font-medium text-gold-400">
 				Banhart got your needs covered
 			</h3>
 			<section className="flex w-100 h-full justify-center p-8">

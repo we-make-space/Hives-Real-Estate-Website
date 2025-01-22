@@ -168,7 +168,7 @@ const WeAre = () => {
 				<Mission />
 
 				{/* Stats Section */}
-				<section className="flex justify-around my-12 text-center text-sky-400 blog_write gap-5">
+				<section className="flex justify-around my-12 text-center text-gold-400 blog_write gap-5">
 					<div>
 						<p className="text-5xl font-bold">44 million</p>
 						<p className="text-gray-600">

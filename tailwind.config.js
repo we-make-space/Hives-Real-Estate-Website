@@ -9,6 +9,9 @@ export default {
 				},
 				gold: {
 					400: "#FFC333"
+				},
+				green: {
+					400: "#759f53"
 				}
 			},
 

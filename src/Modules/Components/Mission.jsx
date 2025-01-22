@@ -78,7 +78,7 @@ const Mission = () => {
 		<div className="bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem] inner-box-shadow text-slate-700 w-full mt-16 rounded-lg p-8 md:p-16 overflow-hidden">
 			<h1
 				ref={textRef}
-				className="text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8 md:mb-10 text-sky-400"
+				className="text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8 md:mb-10 text-gold-400"
 			>
 				Financial experience built for tomorrow, <br /> not yesterday
 			</h1>
@@ -103,11 +103,11 @@ const Mission = () => {
 							/>
 						</div>
 						{/* Text Content */}
-						<h5 className="text-2xl font-semibold text-sky-500">
+						<h5 className="text-2xl font-semibold text-gold-500">
 							{card.title}
 						</h5>
 						<p className="text-gray-600">{card.content}</p>
-						<button className="mt-auto py-2 bg-sky-400 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300 lg:w-[40%]">
+						<button className="mt-auto py-2 bg-gold-400 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300 lg:w-[40%]">
 							Read more
 						</button>
 					</div>

@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 }
 
 .cta_img {
-	background-image: url("./assets/HivesAll.jpg");
+	background-image: url("./assets/BanhartAll.jpg");
 	background-size: cover;
 	background-position: 0% 20%;
 	background-repeat: no-repeat;
@@ -56,11 +56,11 @@ body::-webkit-scrollbar {
 }
 
 .button:hover .text {
-	color: #00b7ff;
+	color: #FFC333;
 }
 
 .button:hover svg path {
-	fill: #00b7ff;
+	fill: #FFC333;
 }
 
 /* ? Partner card styles */
@@ -98,7 +98,7 @@ body::-webkit-scrollbar {
 	display: inline-flex;
 	align-items: center;
 	gap: 0.75rem;
-	background-color: #00b7ff;
+	background-color: #FFC333;
 	color: #fff;
 	border-radius: 10rem;
 	font-weight: 600;
@@ -115,7 +115,7 @@ body::-webkit-scrollbar {
 	width: 25px;
 	height: 25px;
 	position: relative;
-	color: #00b7ff;
+	color: #FFC333;
 	background-color: #fff;
 	border-radius: 50%;
 	display: grid;
@@ -285,7 +285,7 @@ body::-webkit-scrollbar {
 	}
 
 	.portfolio_item {
-		background: rgb(0, 179, 255);
+		background: #FFC333;
 		color: black;
 		font-weight: bold;
 		display: flex;
@@ -305,17 +305,17 @@ body::-webkit-scrollbar {
 	}
 
 	.one {
-		background-image: url("./assets/Hives.jpg");
+		background-image: url("./assets/Banhart.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 0px;
 		transition: box-shadow 0.2s ease-in-out;
-		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #79d2f5;
+		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #FFC333;
 		transform: skewX(175deg);
 	}
 
 	.one:hover {
-		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #79d2f5;
+		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #FFC333;
 		transform: skewX(0deg);
 	}
 
@@ -336,7 +336,7 @@ body::-webkit-scrollbar {
 	}
 
 	.span_create {
-		color: #79d2f5;
+		color: #FFC333;
 		font-style: oblique;
 	}
 
@@ -355,7 +355,7 @@ body::-webkit-scrollbar {
 	}
 
 	.three:hover {
-		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #79d2f5;
+		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #FFC333;
 		transform: skewX(175deg);
 	}
 
@@ -375,7 +375,7 @@ body::-webkit-scrollbar {
 	}
 
 	.four:hover {
-		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #79d2f5;
+		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #FFC333;
 		transform: skewX(175deg);
 	}
 
@@ -395,7 +395,7 @@ body::-webkit-scrollbar {
 	}
 
 	.five:hover {
-		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #79d2f5;
+		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #FFC333;
 		transform: skewX(175deg);
 	}
 
@@ -415,14 +415,14 @@ body::-webkit-scrollbar {
 	}
 
 	.six:hover {
-		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #79d2f5;
+		box-shadow: 4px 5px 0px 0px white, 7px 10px 0px 0px #FFC333;
 		transform: skewX(175deg);
 	}
 
 	.portfolio_item.seven {
 		grid-row: span 2;
 		grid-column: span 3;
-		background: #79d2f5;
+		background: #FFC333;
 		min-height: 15em;
 	}
 
@@ -439,7 +439,7 @@ body::-webkit-scrollbar {
 	}
 
 	.seven_button:hover {
-		background-color: #79d2f5;
+		background-color: #FFC333;
 		color: #fff;
 	}
 
@@ -451,7 +451,7 @@ body::-webkit-scrollbar {
 	.services_wrapper_one_fig_img {
 		width: 45%;
 		border-radius: 7px;
-		box-shadow: -12px 12px 0px 0px #79d2f5;
+		box-shadow: -12px 12px 0px 0px #FFC333;
 	}
 
 	.services_wrapper_two_base {
@@ -541,7 +541,7 @@ body::-webkit-scrollbar {
 
 @layer footerOne {
 	.footer {
-		@apply min-w-full bg-sky-400;
+		@apply min-w-full bg-gold-400;
 	}
 
 	.li > span {
@@ -649,15 +649,15 @@ body::-webkit-scrollbar {
 }
 
 .marquee--flamingo {
-	background: #11dde8;
+	background: #FFC333;
 }
 
 .marquee--ochre {
-	background: #022af2;
+	background: #759f53;
 }
 
 .marquee--butter {
-	background: #05daff;
+	background: #FFC333;
 }
 
 .marquee--mantis {

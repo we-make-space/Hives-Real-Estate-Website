@@ -380,7 +380,7 @@ const GridShadow = () => {
                                                 xl:text-5xl
                                                 pb-6
                                                 font-bold
-                                                text-sky-400
+                                                text-gold-400
                                                 "
 							>
 								Discover More...
@@ -412,7 +412,7 @@ const GridShadow = () => {
 							<header
 								className="
                                           services_wrapper_two_base
-                                          border-sky-400
+                                          border-gold-400
                                           border-t-[0.5px]
                                           py-4
                                           "
@@ -425,7 +425,7 @@ const GridShadow = () => {
                                                 sm:text-xl
                                                 xs:text-lg
                                                 ss:text-lg
-                                                text-sky-400
+                                                text-gold-400
                                                 
                                                 font-semibold
                                                 "
