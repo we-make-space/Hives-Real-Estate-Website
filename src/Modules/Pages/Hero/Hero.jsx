@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Partners } from "../../Components";
-import { BanLogo } from "../../../../public/images";
+import { logo_hives } from "../../../../public/images";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -48,13 +48,13 @@ export default function Example() {
 								href="#"
 								className="-m-1.5 p-1.5 flex items-center"
 							>
-								<span className="sr-only">Banhart</span>
-								{/* <span className="font-sans">BANHART</span> */}
+								<span className="sr-only">Hives</span>
+								{/* <span className="font-sans">Hives</span> */}
 								<img
-									ref={logoRef}
+									// ref={logoRef}
 									alt=""
-									src={BanLogo}
-									className="h-10 w-auto rounded-full"
+									src={logo_hives}
+									className="h-10 w-auto"
 								/>
 							</a>
 						</div>
@@ -103,13 +103,13 @@ export default function Example() {
 									href="#"
 									className="-m-1.5 p-1.5 flex  items-center"
 								>
-									{/* <span className="font-sans">Banhart</span> */}
-									<span className="sr-only">Banhart</span>
+									{/* <span className="font-sans">Hives</span> */}
+									<span className="sr-only">Hives</span>
 									<img
-										ref={logoRef1}
+										// ref={logoRef1}
 										alt=""
-										src={BanLogo}
-										className="h-10 w-auto rounded-full"
+										src={logo_hives}
+										className="h-10 w-auto"
 									/>
 								</a>
 								<button
@@ -184,7 +184,7 @@ export default function Example() {
 						<div className="text-center">
 							<h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
 								<span className="inline-flex animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-transparent">
-									Banhart
+									Hives
 								</span>
 								<br />
 								<span className="text-2xl sm:text-4xl">

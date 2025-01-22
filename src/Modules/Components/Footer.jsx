@@ -4,7 +4,7 @@ import { FiInstagram } from "react-icons/fi";
 import { TbArrowBadgeUp } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { BanLogo } from "../../../public/images";
+import { logo_hives } from "../../../public/images";
 
 const Footer = () => {
 	return (
@@ -16,12 +16,12 @@ const Footer = () => {
 							<figure className="w-full gap-3 items-center flex ">
 								<span className="flex items-center gap-6">
 									<img
-										src={BanLogo}
-										className="h-8 mr-[-1.25rem] rounded-full"
+										src={logo_hives}
+										className="h-8 mr-[-1.25rem]"
 										alt="Fashion Logo"
 									/>
 									<span className="self-center text-xl font-bold whitespace-nowrap dark:text-white uppercase text-black flex flex-col justify-start">
-										Banhart
+										Hives
 									</span>
 								</span>
 							</figure>

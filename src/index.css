@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 }
 
 .cta_img {
-	background-image: url("./assets/BanhartAll.jpg");
+	background-image: url("./assets/HivesAll.jpg");
 	background-size: cover;
 	background-position: 0% 20%;
 	background-repeat: no-repeat;
@@ -305,7 +305,7 @@ body::-webkit-scrollbar {
 	}
 
 	.one {
-		background-image: url("./assets/Banhart.jpg");
+		background-image: url("./assets/Hives.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 0px;
