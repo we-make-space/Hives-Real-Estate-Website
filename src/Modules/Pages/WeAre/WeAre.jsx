@@ -83,7 +83,7 @@ const WeAre = () => {
 							<h1
 								ref={textRef}
 								style={{ overflow: "hidden" }}
-								className="max-w-xl mb-4 text-4xl font-bold tracking-tight text-gold-400 sm:text-6xl sub_hero_text"
+								className="max-w-xl mb-4 text-4xl font-bold tracking-tight text-green-400 sm:text-6xl sub_hero_text"
 							>
 								We're changing the way people connect.
 							</h1>
@@ -92,40 +92,19 @@ const WeAre = () => {
 									id="entry_text"
 									className="text-black max-w-2xl text-justify "
 								>
-									Cupidatat minim in magna ipsum sint dolor
-									qui. Sunt elit in quis cupidatat mollit aute
-									velit. Elit labore commodo nulla aliqua
-									pariatur. Mollit ullamco exercitation
-									tempor. Sint aliqua enim velit sunt id
-									pariatur in voluptate elit. Eu voluptate.
-									Semper massa enim curat feugiat varius
-									consectetur aliquet.
+									We're revolutionizing how people find and connect with their ideal homes. With Hives, you can explore properties, list spaces, and make connections effortlessly—all through our mobile app. Say goodbye to the hassle and hello to a smarter, more seamless way of navigating real estate. Your perfect home is just a tap away.
 								</p>
 								<p
 									id="entry_text"
 									className="text-black max-w-2xl text-justify"
 								>
-									Cupidatat minim in magna ipsum sint dolor
-									qui. Sunt elit in quis cupidatat mollit aute
-									velit. Elit labore commodo nulla aliqua
-									pariatur. Mollit ullamco exercitation
-									tempor. Sint aliqua enim velit sunt id
-									pariatur in voluptate elit. Eu voluptate.
-									Semper massa enim curat feugiat varius
-									consectetur aliquet.
+									Our platform simplifies the real estate experience by eliminating the need for agents, putting you in direct contact with property owners. With Hives, you can seamlessly browse properties, communicate openly, and manage transactions securely—all within our user-friendly mobile app. Whether you're renting, listing, or simply exploring, Hives gives you the freedom to navigate your journey with ease and confidence.
 								</p>
 								<p
 									id="entry_text"
 									className="text-black max-w-2xl text-justify"
 								>
-									Cupidatat minim in magna ipsum sint dolor
-									qui. Sunt elit in quis cupidatat mollit aute
-									velit. Elit labore commodo nulla aliqua
-									pariatur. Mollit ullamco exercitation
-									tempor. Sint aliqua enim velit sunt id
-									pariatur in voluptate elit. Eu voluptate.
-									Semper massa enim curat feugiat varius
-									consectetur aliquet.
+									With Hives, you’re not just finding a place to live; you’re discovering a community that fits your lifestyle. Our mobile app brings you closer to the perfect home with ease and convenience. Explore, connect, and make the move that suits you—all in one seamless experience.
 								</p>
 							</div>
 						</div>

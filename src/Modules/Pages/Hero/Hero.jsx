@@ -183,19 +183,16 @@ export default function Example() {
 						</div>
 						<div className="text-center">
 							<h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-								<span className="inline-flex animate-text-gradient bg-gradient-to-r from-[#FFC333] via-[#FFC333] to-[#FFC333] bg-[200%_auto] bg-clip-text text-transparent">
+								<span className="inline-flex animate-text-gradient bg-gradient-to-r from-[#FFC333] via-[#C8B747] to-[#FFD266] bg-[200%_auto] bg-clip-text text-transparent">
 									Hives
 								</span>
 								<br />
 								<span className="text-2xl text-green-400 sm:text-4xl">
-									Caring for You, Every Step of the Way:
+								Find your space in the world with Hives
 								</span>{" "}
 							</h1>
 							<p className="mt-6 text-lg leading-8 text-gray-600">
-								Anim aute id magna aliqua ad ad non deserunt
-								sunt. Qui irure qui lorem cupidatat commodo.
-								Elit sunt amet fugiat veniam occaecat fugiat
-								aliqua.
+							Discover a world where finding your dream home is effortless. Whether you're looking to rent, list, or explore, Hives connects you with the perfect spaces to call your own. Experience a seamless journey, tailored to your needs, every step of the way
 							</p>
 							<div className="mt-10 flex items-center justify-center gap-x-6">
 								<a

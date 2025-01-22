@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
 const AnimatedWords = () => {
-	const words = ["Hello 🤗", "Welcome ❤️", "To 🌱", "Banhart", "Specialist", "Hospital"];
+	const words = ["Hello 🐝", "Welcome ❤️", "To 🌱", "Hives 💛"];
 	const [index, setIndex] = useState(0);
 	const wordRef = useRef(null);
 
@@ -38,7 +38,7 @@ const AnimatedWords = () => {
 				marginTop: "20%",
 			}}
 		>
-			<span ref={wordRef} className="text-blue-500">{words[index]}</span>
+			<span ref={wordRef} className="text-gold-400">{words[index]}</span>
 		</div>
 	);
 };

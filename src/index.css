@@ -422,7 +422,7 @@ body::-webkit-scrollbar {
 	.portfolio_item.seven {
 		grid-row: span 2;
 		grid-column: span 3;
-		background: #FFC333;
+		background: #759f53;
 		min-height: 15em;
 	}
 
