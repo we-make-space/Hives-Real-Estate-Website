@@ -83,7 +83,7 @@ const WeAre = () => {
 							<h1
 								ref={textRef}
 								style={{ overflow: "hidden" }}
-								className="max-w-xl mb-4 text-4xl font-bold tracking-tight text-sky-400 sm:text-6xl sub_hero_text"
+								className="max-w-xl mb-4 text-4xl font-bold tracking-tight text-gold-400 sm:text-6xl sub_hero_text"
 							>
 								We're changing the way people connect.
 							</h1>

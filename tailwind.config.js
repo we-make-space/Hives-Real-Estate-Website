@@ -7,6 +7,9 @@ export default {
 				sky: {
 					400: "#00b7ff",
 				},
+				gold: {
+					400: "#FFC333"
+				}
 			},
 
 			animation: {

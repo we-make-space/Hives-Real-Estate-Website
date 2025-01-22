@@ -139,8 +139,8 @@ const Partners = () => {
 						</span>
 					</div>
 					<div className="bg-white/20 p-3 min-w-[19rem] min-h-[8rem] m-2 overflow-hidden text-white rounded-lg">
-						<div className="border-l-[5px] border-purple-400 h-[7rem] px-2 flex flex-col">
-							<small className="bg-purple-200 text-gray-900 w-fit rounded-full px-1 mb-[5px]">
+						<div className="border-l-[5px] border-gold-400 h-[7rem] px-2 flex flex-col">
+							<small className="bg-gold-400 text-gray-900 w-fit rounded-full px-1 mb-[5px]">
 								General & Special Services
 							</small>
 							<div className="flex gap-2 font-semibold mb-[9px]">
@@ -151,7 +151,7 @@ const Partners = () => {
 								<span>0208009342</span>
 							</div>
 
-							<small className="bg-indigo-200 text-gray-900 w-fit rounded-full px-1 mb-[5px]">
+							<small className="bg-gold-400 text-gray-900 w-fit rounded-full px-1 mb-[5px]">
 								Complaints & Comments
 							</small>
 							<div className="flex gap-2 font-semibold">
@@ -165,7 +165,7 @@ const Partners = () => {
 					</div>
 				</div>
 
-				<div className="w-[20rem] h-48 rounded-lg bg-sky-200 overflow-hidden">
+				<div className="w-[20rem] h-48 rounded-lg bg-gold-400/50 overflow-hidden">
 					<img
 						src={smile}
 						alt="smile_photo"
@@ -178,7 +178,7 @@ const Partners = () => {
 						</div>
 					</div>
 					<div className=" max-w-[10rem] px-2 text-white font-semibold tracking-wider">
-						<small>at Banhart</small>
+						<small>at Hives</small>
 					</div>
 
 				</div>
