@@ -380,7 +380,7 @@ const GridShadow = () => {
                                                 xl:text-5xl
                                                 pb-6
                                                 font-bold
-                                                text-gold-400
+                                                text-green-400
                                                 "
 							>
 								Discover More...
@@ -425,7 +425,7 @@ const GridShadow = () => {
                                                 sm:text-xl
                                                 xs:text-lg
                                                 ss:text-lg
-                                                text-gold-400
+                                                text-green-400
                                                 
                                                 font-semibold
                                                 "

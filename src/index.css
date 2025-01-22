@@ -124,11 +124,11 @@ body::-webkit-scrollbar {
 }
 
 .btn:hover {
-	background-color: #334155;
+	background-color: #759f53;
 }
 
 .btn:hover .btn__icon-wrapper {
-	color: #334155;
+	color: #759f53;
 }
 
 .btn__icon-svg--copy {

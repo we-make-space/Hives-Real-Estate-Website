@@ -138,33 +138,6 @@ const WeAre = () => {
 					</div>
 				</section>
 
-				{/* Mission Section */}
-				{/* <section className="bg-gray-100 p-8 rounded-lg">
-				<h2 className="text-4xl font-bold mb-4">Our mission</h2>
-				<p className="text-gray-600 mb-6">
-					Aliquet nec acdi mattis amet quisque ullamcorper neque, nibh
-					sem. At arcu, sit dui, nibh dui, aliquam eget aliquam.
-					Quisque id ut vitae feugiat egestas ac. Diam nulla orci et
-					in vivamus scelerisque eget. Eleifend egestas fringilla
-					sapien.
-				</p>
-				<p className="text-gray-600 mb-6">
-					Faucibus commodo massa morbi, volutpat. Dignissim ad eget
-					risus diam. Mattis mattis neque sit erat rhoncus erat
-					turpis. Id lacinia viverra porttitor ut ac vitae eu mauris
-					risus. Faucibus commodo massa morbi, volutpat. Dignissim ad
-					eget risus diam. Mattis mattis neque sit erat rhoncus erat
-					turpis.
-				</p>
-				<p className="text-gray-600">
-					Et vitae fames facilisi magna lacus est commassa. Vitae
-					sapien duis est id et blandit hendrerit faucibus vestibulum.
-					Luctus enim faucibus orci donec nullam. Sit varius volutpat
-					vulputate est varius nisl. Vestibulum sit ut sit amet at
-					amet feugiat volutpat. Ac a lorem varius vulputate.
-				</p>
-			</section> */}
-
 				<Mission />
 
 				{/* Stats Section */}

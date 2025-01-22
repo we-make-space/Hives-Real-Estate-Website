@@ -170,7 +170,7 @@ export default function Example() {
 								Announcing our next round of funding.{" "}
 								<a
 									href="#"
-									className="font-semibold text-gold-400"
+									className="font-semibold text-green-400"
 								>
 									<span
 										aria-hidden="true"
@@ -187,7 +187,7 @@ export default function Example() {
 									Hives
 								</span>
 								<br />
-								<span className="text-2xl sm:text-4xl">
+								<span className="text-2xl text-green-400 sm:text-4xl">
 									Caring for You, Every Step of the Way:
 								</span>{" "}
 							</h1>
@@ -200,7 +200,7 @@ export default function Example() {
 							<div className="mt-10 flex items-center justify-center gap-x-6">
 								<a
 									href="#"
-									className="rounded-md bg-gold-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gold-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-400"
+									className="rounded-md bg-green-400 px-3.5 py-2.5 text-sm font-semibold text-white hover:text-black shadow-sm hover:bg-gold-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-400 transition-all"
 								>
 									Get started
 								</a>

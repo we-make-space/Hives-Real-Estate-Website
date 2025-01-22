@@ -5,7 +5,7 @@ const OurTeam = () => {
 		<section className="py-3 m-4  sm:py-6">
 			<div className="rounded-md mx-auto grid max-w-7xl gap-x-8 gap-y-16 py-6 lg:px-8 xl:grid-cols-3">
 				<div className="max-w-2xl">
-					<h2 className="text-3xl font-bold tracking-tight text-bg-primary sm:text-4xl text-sky-400">
+					<h2 className="text-3xl font-bold tracking-tight text-bg-primary sm:text-4xl text-green-400">
 						OUR SPECIALISTS
 					</h2>
 					<p className="mt-2 text-lg leading-8 text-gray-600">
