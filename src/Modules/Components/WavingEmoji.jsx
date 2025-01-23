@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 
 const WavingEmoji = () => {
 	const emojiRef = useRef(null);
@@ -12,20 +12,20 @@ const WavingEmoji = () => {
 			.to(emoji, {
 				rotation: 20,
 				duration: 0.1,
-				ease: "power2.in",
-				transformOrigin: "70% 70%",
+				ease: 'power2.in',
+				transformOrigin: '70% 70%'
 			})
 			.to(emoji, {
 				rotation: -20,
 				duration: 0.1,
-				ease: "power2.in",
+				ease: 'power2.in',
 				repeat: 2,
-				yoyo: true,
+				yoyo: true
 			})
 			.to(emoji, {
 				rotation: 0,
 				duration: 0.3,
-				ease: "power2.out",
+				ease: 'power2.out'
 			});
 
 		const animationInterval = setInterval(() => {
@@ -40,7 +40,7 @@ const WavingEmoji = () => {
 	return (
 		<div
 			ref={emojiRef}
-			style={{ display: "inline-block", fontSize: "2rem" }}
+			style={{ display: 'inline-block', fontSize: '2rem' }}
 		>
 			👋
 		</div>
