@@ -78,9 +78,9 @@ const Mission = () => {
 		<div className="bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem] inner-box-shadow text-slate-700 w-full mt-16 rounded-lg p-8 md:p-16 overflow-hidden">
 			<h1
 				ref={textRef}
-				className="text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8 md:mb-10 text-green-400"
+				className="text-3xl font-semibold sm:text-4xl md:text-5xl mb-6 sm:mb-8 md:mb-10 text-green-400"
 			>
-				Financial experience built for tomorrow, <br /> not yesterday
+				Renting, Buying, Selling, and Booking – <br /> Simplified for You
 			</h1>
 
 			<div className="w-fit mb-6">
