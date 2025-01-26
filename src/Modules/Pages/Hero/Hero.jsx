@@ -183,7 +183,7 @@ export default function Example() {
 						<div className="text-center">
 							<h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
 								<span className="inline-flex animate-text-gradient bg-gradient-to-r from-[#FFC333] via-[#C8B747] to-[#FFD266] bg-[200%_auto] bg-clip-text text-transparent">
-									Hives
+									Hives Real Estate Hub
 								</span>
 								<br />
 								<span className="text-2xl text-green-400 sm:text-4xl">

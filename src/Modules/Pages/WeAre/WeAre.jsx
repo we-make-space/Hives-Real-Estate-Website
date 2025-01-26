@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
-import { GridShadow, Marquee, Masonry, Mission } from '../../Components';
-import { Banhart } from '../../../assets';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Team } from '..';
+import React, { useRef } from "react";
+import { GridShadow, Marquee, Masonry, Mission } from "../../Components";
+import { Banhart, hivesSmiles } from "../../../assets";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Team } from "..";
+import HivesApp from "../Hives/HivesApp";
 
 const WeAre = () => {
 	const textRef = useRef(null);
@@ -44,8 +45,8 @@ const WeAre = () => {
 				end: 'bottom 100%',
 				scrub: true
 			},
-			xPercent: 2,
-			opacity: 1
+			xPercent: 0,
+			opacity: 1,
 		});
 
 		const textElement = textRef.current;
@@ -90,7 +91,7 @@ const WeAre = () => {
 							>
 								We're changing the way people connect.
 							</h1>
-							<div className="flex flex-col gap-8 text-lg ">
+							<div className="flex flex-col gap-8 text-xl ">
 								<p
 									id="entry_text"
 									className="text-black max-w-2xl text-justify "
@@ -103,7 +104,7 @@ const WeAre = () => {
 								</p>
 								<p
 									id="entry_text"
-									className="text-black max-w-2xl text-justify"
+									className="text-black max-w-2xl text-left"
 								>
 									Our platform simplifies the real estate experience by eliminating the need for
 									agents, putting you in direct contact with property owners. With Hives, you can
@@ -114,7 +115,7 @@ const WeAre = () => {
 								</p>
 								<p
 									id="entry_text"
-									className="text-black max-w-2xl text-justify"
+									className="text-black max-w-2xl text-left"
 								>
 									With Hives, you’re not just finding a place to live; you’re discovering a community
 									that fits your lifestyle. Our mobile app brings you closer to the perfect home with
@@ -124,9 +125,9 @@ const WeAre = () => {
 							</div>
 						</div>
 						<img
-							src="https://plus.unsplash.com/premium_photo-1664303363680-4c8f8e504694?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG9zcGl0YWxzfGVufDB8fDB8fHww"
-							alt="hospital"
-							className="rounded-2xl"
+							src={hivesSmiles}
+							width={550}
+							className=""
 							id="entry_media"
 						/>
 					</div>
@@ -152,7 +153,7 @@ const WeAre = () => {
 			</div>
 			<div className="bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
 				<Marquee />
-				<GridShadow />
+				<HivesApp />
 				<Masonry />
 				<Team />
 			</div>
