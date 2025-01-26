@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const ImageSwitcher = () => {
 	const [activeImage, setActiveImage] = useState(0);
 
 	const images = [
-		"https://images.unsplash.com/photo-1596510914914-e14c6f59f925?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNtaWxpbmd8ZW58MHx8MHx8fDA%3D",
-		"https://images.unsplash.com/photo-1654272763471-87c0ebf395f8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHNtaWxpbmd8ZW58MHx8MHx8fDA%3D",
-		"https://images.unsplash.com/photo-1601510007533-c90434e630a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fHNtaWxpbmd8ZW58MHx8MHx8fDA%3D",
+		'https://images.unsplash.com/photo-1596510914914-e14c6f59f925?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNtaWxpbmd8ZW58MHx8MHx8fDA%3D',
+		'https://images.unsplash.com/photo-1654272763471-87c0ebf395f8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHNtaWxpbmd8ZW58MHx8MHx8fDA%3D',
+		'https://images.unsplash.com/photo-1601510007533-c90434e630a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fHNtaWxpbmd8ZW58MHx8MHx8fDA%3D'
 	];
 
 	const paragraphs = [
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur interdum.",
-		"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-		"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur interdum.',
+		'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+		'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
 	];
 
 	const handleHover = (index) => {
@@ -24,8 +24,8 @@ const ImageSwitcher = () => {
 			<div className="w-full md:w-1/2 mb-8 md:mb-0">
 				<img
 					src={images[activeImage]}
-                    alt={`Image ${activeImage + 1}`}
-                    width={400}
+					alt={`Image ${activeImage + 1}`}
+					width={400}
 					className=" rounded-lg shadow-lg transition-all"
 				/>
 			</div>

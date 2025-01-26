@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Marquee = () => {
 	return (
@@ -8,9 +8,7 @@ const Marquee = () => {
 					className="marquee marquee--flamingo"
 					data-text="discover, list and rent"
 				>
-					<span className="sr-only">
-						Like a &lt;marquee&gt; element
-					</span>
+					<span className="sr-only">Like a &lt;marquee&gt; element</span>
 				</figure>
 
 				<figure
@@ -20,10 +18,11 @@ const Marquee = () => {
 					<span className="sr-only">Powered by some CSS</span>
 				</figure>
 
-				<figure className="marquee marquee--butter" data-text="find your dream home">
-					<span className="sr-only">
-						Like a &lt;marquee&gt; element
-					</span>
+				<figure
+					className="marquee marquee--butter"
+					data-text="find your dream home"
+				>
+					<span className="sr-only">Like a &lt;marquee&gt; element</span>
 				</figure>
 			</div>
 		</section>

@@ -1,8 +1,11 @@
-import React from "react";
+import React from 'react';
 
 const Button = () => {
 	return (
-		<a className="btn" href="#">
+		<a
+			className="btn"
+			href="#"
+		>
 			<span className="btn__icon-wrapper">
 				<svg
 					width="10"
