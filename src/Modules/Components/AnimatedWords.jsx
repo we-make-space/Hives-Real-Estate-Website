@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
-import { gsap } from "gsap";
+import React, { useEffect, useRef, useState } from 'react';
+import { gsap } from 'gsap';
 
 const AnimatedWords = () => {
-	const words = ["Hello 🐝", "Welcome ❤️", "To 🌱", "Hives 💛"];
+	const words = ['Hello 🐝', 'Welcome ❤️', 'To 🌱', 'Hives 💛'];
 	const [index, setIndex] = useState(0);
 	const wordRef = useRef(null);
 
@@ -19,9 +19,9 @@ const AnimatedWords = () => {
 					// GSAP fade in animation
 					gsap.to(wordRef.current, {
 						opacity: 1,
-						duration: 0.5,
+						duration: 0.5
 					});
-				},
+				}
 			});
 		}, 2000); // Change word every 3 seconds
 
@@ -32,13 +32,18 @@ const AnimatedWords = () => {
 	return (
 		<div
 			style={{
-				fontSize: "2rem",
-				fontWeight: "bold",
-				textAlign: "center",
-				marginTop: "20%",
+				fontSize: '2rem',
+				fontWeight: 'bold',
+				textAlign: 'center',
+				marginTop: '20%'
 			}}
 		>
-			<span ref={wordRef} className="text-gold-400">{words[index]}</span>
+			<span
+				ref={wordRef}
+				className="text-gold-400"
+			>
+				{words[index]}
+			</span>
 		</div>
 	);
 };

@@ -1,11 +1,11 @@
-import { Masonry } from "../../Components";
+import { Masonry } from '../../Components';
 
 const About = () => {
-    return (
-        <>
-            <Masonry />
-        </>
-    )
-}
+	return (
+		<>
+			<Masonry />
+		</>
+	);
+};
 
 export default About;

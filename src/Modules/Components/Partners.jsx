@@ -1,11 +1,11 @@
-import React from "react";
-import Marquee from "react-fast-marquee";
-import Avatar from "@mui/material/Avatar";
-import AvatarGroup from "@mui/material/AvatarGroup";
-import { BiSolidQuoteRight } from "react-icons/bi";
-import { smile } from "../../../public/images";
-import AnimatedWords from "./AnimatedWords";
-import WavingEmoji from "./WavingEmoji";
+import React from 'react';
+import Marquee from 'react-fast-marquee';
+import Avatar from '@mui/material/Avatar';
+import AvatarGroup from '@mui/material/AvatarGroup';
+import { BiSolidQuoteRight } from 'react-icons/bi';
+import { smile } from '../../../public/images';
+import AnimatedWords from './AnimatedWords';
+import WavingEmoji from './WavingEmoji';
 
 const Partners = () => {
 	return (
@@ -24,13 +24,16 @@ const Partners = () => {
 						<div className="h-[60%] flex flex-col justify-between text-white text-sm ">
 							<small className="">Medical Center Patient</small>
 							<p className="text-base max-w-full">
-								In the realm of care, Banhart doctors aren't
-								just practitioners; they're medical guardians
+								In the realm of care, Banhart doctors aren't just practitioners; they're medical
+								guardians
 							</p>
 						</div>
 
 						<div className="flex justify-between  items-center">
-							<AvatarGroup max={4} className="">
+							<AvatarGroup
+								max={4}
+								className=""
+							>
 								<Avatar
 									alt="Remy Sharp"
 									src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHBpY3R1cmVzfGVufDB8fDB8fHww"
@@ -59,7 +62,10 @@ const Partners = () => {
 							</AvatarGroup>
 
 							<div className="">
-								<BiSolidQuoteRight size={26} color="white" />
+								<BiSolidQuoteRight
+									size={26}
+									color="white"
+								/>
 							</div>
 						</div>
 					</div>
@@ -67,9 +73,7 @@ const Partners = () => {
 				<div className="w-[20rem] h-48 rounded-lg bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] relative flex items-center justify-center border">
 					<div className="absolute min-w-[17rem] h-[9rem] bg-gray-200/20 backdrop-blur-[4px]  throw_img rounded-xl  overflow-hidden">
 						<div className="flex items-center justify-between pr-3 pt-2">
-							<div className="relative left-[5px] z_ndex animate-pulse">
-								❤️
-							</div>
+							<div className="relative left-[5px] z_ndex animate-pulse">❤️</div>
 							<small className="bg-white/40 p-1 backdrop-blur-[1px] rounded-2xl text-red-500 font-semibold">
 								We serve with love
 							</small>
@@ -85,7 +89,7 @@ const Partners = () => {
 								<div className="p-2 bg-white/20 backdrop-blur-sm rounded-lg text-lg">
 									<span className="inline-flex animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-transparent">
 										Banhart
-									</span>{" "}
+									</span>{' '}
 									Specialist Hospital
 								</div>
 								<div className="grid grid-flow-col grid-cols-2 gap-3">
@@ -101,20 +105,14 @@ const Partners = () => {
 									<div className="p-3 flex justify-center items-center bg-white/20 backdrop-blur-sm rounded-lg relative">
 										<div className="absolute top-[-7px] left-[-8px] animate-bounce">
 											{/* ⏰ */}
-											<span className="text-2xl">
-												⚡️
-											</span>
+											<span className="text-2xl">⚡️</span>
 										</div>
 										<div className="space--1 flex flex-col text-xl overflow-hidden">
 											<span className="space-x-2">
 												24
-												<span className="animate-ping">
-													hr
-												</span>
+												<span className="animate-ping">hr</span>
 											</span>
-											<small className="text-xs text-red-500 animate-pulse">
-												service
-											</small>
+											<small className="text-xs text-red-500 animate-pulse">service</small>
 										</div>
 									</div>
 								</div>
@@ -134,9 +132,7 @@ const Partners = () => {
 
 				<div className="w-[20rem] h-48 rounded-lg card_5 flex flex-col justify-between items-center text-white overflow-hidden">
 					<div className="px-1 m-1 min-w-[19rem] flex items-center">
-						<span className="text-lg font-semibold">
-							Our Hotlines
-						</span>
+						<span className="text-lg font-semibold">Our Hotlines</span>
 					</div>
 					<div className="bg-white/20 p-3 min-w-[19rem] min-h-[8rem] m-2 overflow-hidden text-white rounded-lg">
 						<div className="border-l-[5px] border-gold-400 h-[7rem] px-2 flex flex-col">
@@ -145,9 +141,7 @@ const Partners = () => {
 							</small>
 							<div className="flex gap-2 font-semibold mb-[9px]">
 								<span>0256970906</span>
-								<div className="px-1 py-1 text-sm bg-yellow-500/50 rounded-full">
-									🔗
-								</div>
+								<div className="px-1 py-1 text-sm bg-yellow-500/50 rounded-full">🔗</div>
 								<span>0208009342</span>
 							</div>
 
@@ -156,9 +150,7 @@ const Partners = () => {
 							</small>
 							<div className="flex gap-2 font-semibold">
 								<span>0256970906</span>
-								<div className="px-1 py-1 text-sm bg-teal-500/50 rounded-full">
-									🔗
-								</div>
+								<div className="px-1 py-1 text-sm bg-teal-500/50 rounded-full">🔗</div>
 								<span>0208009342</span>
 							</div>
 						</div>
@@ -180,7 +172,6 @@ const Partners = () => {
 					<div className=" max-w-[10rem] px-2 text-white font-semibold tracking-wider">
 						<small>at Hives</small>
 					</div>
-
 				</div>
 
 				{/* <div className="w-[20rem] h-48 rounded-lg bg-blue-200"></div> */}

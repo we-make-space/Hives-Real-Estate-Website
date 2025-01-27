@@ -1,33 +1,36 @@
-import React, { useRef } from "react";
-import Button from "./Button";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useRef } from 'react';
+import Button from './Button';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const cardData = [
 	{
 		id: 1,
-		title: "Streamlined Launch",
-		imageSrc: "https://images.unsplash.com/photo-1581595220057-eefa8c4add1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG9zcGl0YWwlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D", 
+		title: 'Streamlined Launch',
+		imageSrc:
+			'https://images.unsplash.com/photo-1581595220057-eefa8c4add1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG9zcGl0YWwlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D',
 		content:
-			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, cumque aut tempora dolorum magni odit! Dolorum vel unde illo quae tenetur cumque?",
+			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, cumque aut tempora dolorum magni odit! Dolorum vel unde illo quae tenetur cumque?'
 	},
 	{
 		id: 2,
-		title: "Accelerate your build",
-		imageSrc: "https://images.unsplash.com/photo-1512102438733-bfa4ed29aef7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvc3BpdGFsJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D", 
+		title: 'Accelerate your build',
+		imageSrc:
+			'https://images.unsplash.com/photo-1512102438733-bfa4ed29aef7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvc3BpdGFsJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D',
 		content:
-			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, cumque aut tempora dolorum magni odit! Dolorum vel unde illo quae tenetur cumque?",
+			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, cumque aut tempora dolorum magni odit! Dolorum vel unde illo quae tenetur cumque?'
 	},
 	{
 		id: 3,
-		title: "Built for growth",
-		imageSrc: "https://images.unsplash.com/photo-1516575901726-efcb7a9895a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvc3BpdGFsJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D", 
+		title: 'Built for growth',
+		imageSrc:
+			'https://images.unsplash.com/photo-1516575901726-efcb7a9895a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvc3BpdGFsJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D',
 		content:
-			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, cumque aut tempora dolorum magni odit! Dolorum vel unde illo quae tenetur cumque?",
-	},
+			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, cumque aut tempora dolorum magni odit! Dolorum vel unde illo quae tenetur cumque?'
+	}
 ];
 
 const Mission = () => {
@@ -39,21 +42,21 @@ const Mission = () => {
 
 		gsap.fromTo(
 			textElement,
-			{ y: "100%", opacity: 0 },
+			{ y: '100%', opacity: 0 },
 			{
-				y: "0%",
+				y: '0%',
 				opacity: 1,
 				duration: 3,
-				ease: "elastic",
+				ease: 'elastic',
 				stagger: {
-					amount: 1,
+					amount: 1
 				},
 				scrollTrigger: {
 					trigger: textElement,
-					start: "top 90%",
-					end: "bottom 70%",
-					toggleActions: "play none none none",
-				},
+					start: 'top 90%',
+					end: 'bottom 70%',
+					toggleActions: 'play none none none'
+				}
 			}
 		);
 
@@ -64,12 +67,12 @@ const Mission = () => {
 				y: 0,
 				opacity: 1,
 				duration: 3,
-				ease: "elastic",
+				ease: 'elastic',
 				stagger: 0.2,
 				scrollTrigger: {
-					trigger: ".cards-container",
-					start: "top 80%",
-				},
+					trigger: '.cards-container',
+					start: 'top 80%'
+				}
 			}
 		);
 	}, []);
@@ -103,9 +106,7 @@ const Mission = () => {
 							/>
 						</div>
 						{/* Text Content */}
-						<h5 className="text-2xl font-semibold text-gold-500">
-							{card.title}
-						</h5>
+						<h5 className="text-2xl font-semibold text-gold-500">{card.title}</h5>
 						<p className="text-gray-600">{card.content}</p>
 						<button className="mt-auto py-2 bg-gold-400 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300 lg:w-[40%]">
 							Read more

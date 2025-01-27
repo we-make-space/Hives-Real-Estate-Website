@@ -1,4 +1,4 @@
-import { people } from "./People";
+import { people } from './People';
 
 const OurTeam = () => {
 	return (
@@ -9,9 +9,8 @@ const OurTeam = () => {
 						OUR SPECIALISTS
 					</h2>
 					<p className="mt-2 text-lg leading-8 text-gray-600">
-						We&apos;re a dynamic group of individuals who are
-						passionate about what we do and dedicated to delivering
-						the best results for our clients.
+						We&apos;re a dynamic group of individuals who are passionate about what we do and dedicated to
+						delivering the best results for our clients.
 					</p>
 				</div>
 
@@ -20,15 +19,19 @@ const OurTeam = () => {
 					className="grid justify-items-center max-w gap-x-8 gap-y-16 py-10  lg:px-8 ss:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 rounded-xl bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] overflow-hidden shadow-md"
 				>
 					{people.map((person) => (
-						<div className="card" key={person.id}>
-							<img src={person.imageUrl} className="card_img" />
+						<div
+							className="card"
+							key={person.id}
+						>
+							<img
+								src={person.imageUrl}
+								className="card_img"
+							/>
 
 							<div className="card__content">
 								<p className="card__title">{person.name}</p>
 								<p className="text-white">{person.role}</p>
-								<p className="card__description">
-									{person.bio}
-								</p>
+								<p className="card__description">{person.bio}</p>
 							</div>
 						</div>
 					))}
