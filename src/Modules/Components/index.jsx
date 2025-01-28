@@ -9,4 +9,5 @@ export { default as AnimatedWords } from './AnimatedWords';
 export { default as WavingEmoji } from './WavingEmoji';
 export { default as ImageSwitcher } from './ImageSwitcher';
 export { default as FAQ } from './FAQ';
+export { default as ModernCTA } from './ModernCTA';
 export { default as Layout } from './Layout';

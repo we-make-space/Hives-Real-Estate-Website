@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Home, Key, Calendar, MapPin } from 'lucide-react';
+import { Phone, Home, MessageCircle, Calendar, MapPin } from 'lucide-react';
+import { homepage } from '../../../assets';
 
 const HivesApp = () => {
 	const features = [
@@ -20,79 +21,71 @@ const HivesApp = () => {
 			description: 'Get neighborhood insights and nearby amenities'
 		},
 		{
-			icon: <Key className="w-6 h-6" />,
-			title: 'Virtual Tours',
-			description: 'Experience properties in 3D from anywhere'
+			icon: <MessageCircle className="w-6 h-6" />,
+			title: 'Instant Chat',
+			description: 'Connect directly with property owners'
 		}
 	];
 
 	return (
-		<section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-white to-gold-50">
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-				<div className="grid lg:grid-cols-2 gap-12 items-center">
-					{/* Content Side */}
+		<section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-white to-green-400/30">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+				<div className="grid lg:grid-cols-2 gap-16 items-center">
 					<motion.div
 						initial={{ opacity: 0, x: -50 }}
 						animate={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.6 }}
-						className="space-y-8"
+						className="space-y-10"
 					>
-						<div className="space-y-4">
-							<h2 className="text-4xl font-bold text-gray-900">
+						<div className="space-y-6">
+							<h2 className="text-5xl font-bold text-gray-900 leading-tight">
 								Your Dream Home
-								<span className="text-gold-600"> in Your Pocket</span>
+								<span className="text-gold-400 block mt-2">in Your Pocket</span>
 							</h2>
-							<p className="text-lg text-gray-600">
+							<p className="text-xl text-gray-600 leading-relaxed">
 								Experience the future of real estate hunting with our innovative mobile app. Find, tour,
 								and secure your perfect property with just a few taps.
 							</p>
 						</div>
-					</motion.div>
-					<div className="grid grid-cols-2 gap-6">
-						{features.map((feature, index) => (
-							<motion.div
-								key={feature.title}
-								initial={{ opacity: 0, y: 20 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{ delay: index * 0.1 }}
-								className="p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow"
-							>
-								<div className="text-gold-600 mb-2">{feature.icon}</div>
-								<h3 className="font-semibold text-gray-900">{feature.title}</h3>
-								<p className="text-sm text-gray-600">{feature.description}</p>
-							</motion.div>
-						))}
-					</div>
 
-					<motion.div
-						initial={{ opacity: 0, y: 20 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ delay: 0.6 }}
-						className="flex gap-4"
-					>
-						<div>
-							<button className="px-6 py-3 bg-gold-600 text-white rounded-full hover:bg-gold-700 transition-colors">
+						<div className="grid grid-cols-2 gap-8">
+							{features.map((feature, index) => (
+								<motion.div
+									key={feature.title}
+									initial={{ opacity: 0, y: 20 }}
+									animate={{ opacity: 1, y: 0 }}
+									transition={{ delay: index * 0.1 }}
+									className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+								>
+									<div className="text-gold-400 mb-3">{feature.icon}</div>
+									<h3 className="font-semibold text-gray-900 text-lg mb-2">{feature.title}</h3>
+									<p className="text-gray-600">{feature.description}</p>
+								</motion.div>
+							))}
+						</div>
+
+						<div className="flex gap-6 pt-4">
+							<button className="px-8 py-4 bg-gold-400 text-white text-lg rounded-full hover:text-green-400 transition-colors shadow-lg hover:shadow-xl">
 								Download App
 							</button>
-							<button className="px-6 py-3 border border-gold-600 text-gold-600 rounded-full hover:bg-gold-50 transition-colors">
+							<button className="px-8 py-4 border-2 border-gold-400 text-gold-400 text-lg rounded-full hover:bg-gold-400/10 transition-colors">
 								Learn More
 							</button>
 						</div>
 					</motion.div>
 
-					{/* Image Side */}
 					<motion.div
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ duration: 0.6 }}
-						className="relative"
+						className="relative lg:h-[800px] flex items-center justify-center"
 					>
-						<div className="absolute inset-0 bg-gradient-to-r from-gold-200 to-gold-100 rounded-full filter blur-3xl opacity-30" />
+						<div className="absolute inset-0 rounded-full filter blur-3xl opacity-30" />
 						<motion.img
 							src={homepage}
 							alt="Hives Real Estate App Interface"
-							className="relative w-full max-w-md mx-auto rounded-2xl shadow-2xl"
-							animate={{ y: [0, -10, 0] }}
+							className="relative w-full max-w-5xl mx-auto rounded-3xl shadow-2xl"
+							animate={{ y: [0, -15, 0] }}
 							transition={{
 								duration: 4,
 								repeat: Infinity,
@@ -101,34 +94,6 @@ const HivesApp = () => {
 						/>
 					</motion.div>
 				</div>
-			</div>
-
-			{/* Animated background elements */}
-			<div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
-				<motion.div
-					className="absolute w-64 h-64 rounded-full bg-gold-200 opacity-20 top-1/4 left-1/4"
-					animate={{
-						scale: [1, 1.2, 1],
-						rotate: [0, 180, 360]
-					}}
-					transition={{
-						duration: 15,
-						repeat: Infinity,
-						ease: 'linear'
-					}}
-				/>
-				<motion.div
-					className="absolute w-96 h-96 rounded-full bg-gold-100 opacity-10 bottom-1/4 right-1/4"
-					animate={{
-						scale: [1.2, 1, 1.2],
-						rotate: [360, 180, 0]
-					}}
-					transition={{
-						duration: 20,
-						repeat: Infinity,
-						ease: 'linear'
-					}}
-				/>
 			</div>
 		</section>
 	);

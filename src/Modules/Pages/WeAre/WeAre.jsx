@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { GridShadow, Marquee, Masonry, Mission } from '../../Components';
+import { GridShadow, Marquee, Masonry, Mission, ModernCTA } from '../../Components';
 import { Banhart, hivesSmiles } from '../../../assets';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -21,14 +21,16 @@ const WeAre = () => {
 			});
 
 			gsap.to('#entry_text', {
-				scrollTrigger: {
-					trigger: '#entry',
-					start: 'top bottom',
-					end: 'bottom 100%',
-					scrub: true
-				},
+				xPercent: 0,
 				opacity: 1,
-				xPercent: 80
+				duration: 1,
+				ease: 'power3.out',
+				stagger: 0.3,
+				scrollTrigger: {
+					trigger: '#entry_text', // Element to trigger the animation
+					start: 'top 75%', // When the top of the element is 75% from the top of the viewport
+					toggleActions: 'play none none none' // Play the animation on scroll
+				}
 			});
 		}
 
@@ -154,13 +156,11 @@ const WeAre = () => {
 			<div className="bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
 				<Marquee />
 				<HivesApp />
-				<Masonry />
-				<Team />
+				{/* <Masonry /> */}
+				{/* <Team /> */}
 			</div>
-			{/* Footer Section */}
-			<section className="flex justify-center items-center w-full p-8">
-				<div className="cta_img h-[60vh] w-full rounded-xl"></div>
-			</section>
+			{/* CTA Section */}
+			<ModernCTA />
 		</>
 	);
 };
