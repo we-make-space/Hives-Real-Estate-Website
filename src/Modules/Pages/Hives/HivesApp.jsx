@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Home, MessageCircle, Calendar, MapPin } from 'lucide-react';
 import { homepage } from '../../../assets';
+import { DownloadModal } from '../../Components';
 
 const HivesApp = () => {
 	const features = [
@@ -28,7 +29,7 @@ const HivesApp = () => {
 	];
 
 	return (
-		<section className="relative min-h-screen overflow-hidden bg-gradient-to-b from-white to-green-400/30">
+		<section className="relative min-h-screen overflow-hidden">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 				<div className="grid lg:grid-cols-2 gap-16 items-center">
 					<motion.div
@@ -65,10 +66,8 @@ const HivesApp = () => {
 						</div>
 
 						<div className="flex gap-6 pt-4">
-							<button className="px-8 py-4 bg-gold-400 text-white text-lg rounded-full hover:text-green-400 transition-colors shadow-lg hover:shadow-xl">
-								Download App
-							</button>
-							<button className="px-8 py-4 border-2 border-gold-400 text-gold-400 text-lg rounded-full hover:bg-gold-400/10 transition-colors">
+							<DownloadModal />
+							<button className="px-6 py-3 border-2 border-gold-400 text-gold-400 text-lg rounded-full hover:bg-gold-400/10 transition-colors">
 								Learn More
 							</button>
 						</div>

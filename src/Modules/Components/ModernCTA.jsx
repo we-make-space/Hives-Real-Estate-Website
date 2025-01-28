@@ -46,13 +46,13 @@ const ModernCTA = () => {
 	};
 
 	return (
-		<section className="relative w-full overflow-hidden bg-black">
+		<section className="relative w-full overflow-hidden bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
 			<div className="relative h-[350px] md:h-[600px] w-full">
 				{' '}
 				{/* Adjusted height */}
 				{/* Background Pattern */}
-				<div className="absolute inset-0 bg-black opacity-50 z-10" />
-				<div className="absolute inset-0 bg-gradient-to-br from-black/80 via-transparent to-black/80 z-20" />
+				<div className="absolute inset-0 bg-white opacity-50" />
+				<div className="absolute inset-0" />
 				{/* Image Container */}
 				<div
 					className="absolute inset-0 transition-transform duration-700 ease-out"

@@ -11,3 +11,4 @@ export { default as ImageSwitcher } from './ImageSwitcher';
 export { default as FAQ } from './FAQ';
 export { default as ModernCTA } from './ModernCTA';
 export { default as Layout } from './Layout';
+export { default as DownloadModal } from './DownloadModal';

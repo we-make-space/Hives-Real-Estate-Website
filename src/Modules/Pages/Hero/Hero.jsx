@@ -13,7 +13,7 @@ const navigation = [
 	{ name: 'Company', href: '#' }
 ];
 
-export default function Example() {
+export default function Hero() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	const logoRef = useRef(null);
@@ -21,17 +21,17 @@ export default function Example() {
 
 	useGSAP(() => {
 		gsap.to(logoRef.current, {
-			rotation: 360, // Rotate 360 degrees
-			repeat: -1, // Repeat infinitely
-			duration: 10, // Time for one full rotation
-			ease: 'linear' // Smooth continuous motion
+			rotation: 360, 
+			repeat: -1, 
+			duration: 10, 
+			ease: 'linear' 
 		});
 
 		gsap.to(logoRef1.current, {
-			rotation: 360, // Rotate 360 degrees
-			repeat: -1, // Repeat infinitely
-			duration: 10, // Time for one full rotation
-			ease: 'linear' // Smooth continuous motion
+			rotation: 360, 
+			repeat: -1, 
+			duration: 10, 
+			ease: 'linear' 
 		});
 	}, []);
 
@@ -167,7 +167,7 @@ export default function Example() {
 					<div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 						<div className="hidden sm:mb-8 sm:flex sm:justify-center">
 							<div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-								Announcing our next round of funding.{' '}
+								Announcing our revolutionizing mobile app.{' '}
 								<a
 									href="#"
 									className="font-semibold text-green-400"
@@ -195,7 +195,7 @@ export default function Example() {
 								rent, list, or explore, Hives connects you with the perfect spaces to call your own.
 								Experience a seamless journey, tailored to your needs, every step of the way
 							</p>
-							<div className="mt-10 flex items-center justify-center gap-x-6">
+							<div className="mt-10 flex items-center justify-center gap-x-6 hidden">
 								<a
 									href="#"
 									className="rounded-md bg-green-400 px-3.5 py-2.5 text-sm font-semibold text-white hover:text-black shadow-sm hover:bg-gold-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-400 transition-all"
@@ -225,7 +225,7 @@ export default function Example() {
 					</div>
 				</div>
 			</div>
-			<Partners />
+			{/* <Partners /> */}
 		</>
 	);
 }

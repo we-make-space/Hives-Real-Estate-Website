@@ -137,27 +137,11 @@ const WeAre = () => {
 
 				<Mission />
 
-				{/* Stats Section */}
-				<section className="flex justify-around my-12 text-center text-gold-400 blog_write gap-5">
-					<div>
-						<p className="text-5xl font-bold">44 million</p>
-						<p className="text-gray-600">Transactions every 24 hours</p>
-					</div>
-					<div>
-						<p className="text-5xl font-bold">$119 trillion</p>
-						<p className="text-gray-600">Assets under holding</p>
-					</div>
-					<div>
-						<p className="text-5xl font-bold">46,000</p>
-						<p className="text-gray-600">New users annually</p>
-					</div>
-				</section>
 			</div>
 			<div className="bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
 				<Marquee />
 				<HivesApp />
 				{/* <Masonry /> */}
-				{/* <Team /> */}
 			</div>
 			{/* CTA Section */}
 			<ModernCTA />
