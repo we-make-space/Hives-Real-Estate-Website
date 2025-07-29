@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 import { GridShadow, Marquee, Masonry, Mission, ModernCTA } from '../../Components';
-import { Banhart, hivesSmiles } from '../../../assets';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Team } from '..';
 import HivesApp from '../Hives/HivesApp';
+import { hivesSmiles } from '../../../assets';
 
 const WeAre = () => {
 	const textRef = useRef(null);
@@ -136,7 +136,6 @@ const WeAre = () => {
 				</section>
 
 				<Mission />
-
 			</div>
 			<div className="bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
 				<Marquee />

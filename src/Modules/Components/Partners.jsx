@@ -3,7 +3,6 @@ import Marquee from 'react-fast-marquee';
 import Avatar from '@mui/material/Avatar';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import { BiSolidQuoteRight } from 'react-icons/bi';
-import { smile } from '../../../public/images';
 import AnimatedWords from './AnimatedWords';
 import WavingEmoji from './WavingEmoji';
 

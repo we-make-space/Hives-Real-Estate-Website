@@ -21,17 +21,17 @@ export default function Hero() {
 
 	useGSAP(() => {
 		gsap.to(logoRef.current, {
-			rotation: 360, 
-			repeat: -1, 
-			duration: 10, 
-			ease: 'linear' 
+			rotation: 360,
+			repeat: -1,
+			duration: 10,
+			ease: 'linear'
 		});
 
 		gsap.to(logoRef1.current, {
-			rotation: 360, 
-			repeat: -1, 
-			duration: 10, 
-			ease: 'linear' 
+			rotation: 360,
+			repeat: -1,
+			duration: 10,
+			ease: 'linear'
 		});
 	}, []);
 

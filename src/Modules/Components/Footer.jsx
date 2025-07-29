@@ -15,7 +15,7 @@ import {
 	Home,
 	Building
 } from 'lucide-react';
-import { logo_hives } from '../../../public/images';
+import { hives_yellow, logo_hives } from '../../../public/images';
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -33,7 +33,11 @@ const Footer = () => {
 								alt="Hives Real Estate"
 								className="h-10"
 							/>
-							<span className="text-2xl font-bold text-white">Hives</span>
+							<img
+								src={hives_yellow}
+								alt="Hives"
+								className="h-6"
+							/>
 						</div>
 						<p className="text-gray-400 text-sm">
 							Your trusted partner in finding the perfect property. We make real estate simple,
@@ -41,7 +45,7 @@ const Footer = () => {
 						</p>
 						<div className="flex gap-4">
 							<Link
-								to="#"
+								to="https://x.com/realhives?s=21"
 								className="hover:text-gold-400 transition-colors"
 							>
 								<Twitter size={20} />
@@ -53,7 +57,7 @@ const Footer = () => {
 								<Instagram size={20} />
 							</Link>
 							<Link
-								to="#"
+								to="https://www.linkedin.com/company/realhives/"
 								className="hover:text-gold-400 transition-colors"
 							>
 								<Linkedin size={20} />
