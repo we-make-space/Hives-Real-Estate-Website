@@ -7,4 +7,5 @@
        alt="Hives Logo" width="150" style="margin-bottom: 20px;">
 </div>
 <br/>
-# Find your next home with Hives!
+
+### Find your next home with Hives!
